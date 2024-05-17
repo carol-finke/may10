@@ -3,8 +3,9 @@
 <h1>My CRM</h1>
  
 <ul>
-  <% for company in companies %>
+  <% for company in @companies %>
     <li>
+    <a href= "/companies <%= company["id"]%>>
       <%= company["name"] %>
     </li>
   <% end %>
